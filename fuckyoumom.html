@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <title>
-            virus
-        </title>
+        <h1>Generate a <em>Random Number</em> Between...</h1>
     </header>
     <body>
-        var min_num = 1;
-        var max_num = 100;
-        while(true){
+        <input type="number" id="lownumber" value="1" />
+        and
+        <input type="number" id="highnumber" value="100" />
 
-            let num_random = math.random()* max_num;
-            console.log('input : '+num_random);
-            if(num_random >= min_num){
-                console.log(math.floor(num_random));
-                break;
-            } else {
-                console.log(':::'+math.floor(num_random));
-            }
-        }
-        num_random
+        <br />
+
+        <button id="getit">Generate!</button>
+
+        <div id="randomnumber"></div>
     </body>
 </html>
+
+
+
